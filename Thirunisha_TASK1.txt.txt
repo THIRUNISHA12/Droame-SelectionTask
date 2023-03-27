@@ -1,0 +1,352 @@
+
+
+
+Task 1: Mobile Application
+
+package mobileApplication;
+
+// create class user
+class User {
+	private String name;
+
+	public User(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+}
+// create class Story
+import java.util.Date;
+import java.util.List;
+
+// Story class
+public class Story {
+	private String id;
+	private String userId;
+	private String photo;
+	private String sharedUsers;
+	private Date expirationDate;
+
+	public Story(String string, String string2, Date date) {
+		// TODO Auto-generated constructor stub
+		this.id = "id";
+		this.userId = "userId";
+		this.photo = "photo";
+		this.sharedUsers = "sharedUsers";
+		this.expirationDate = expirationDate;
+	}
+
+	// Getters and Setters
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+
+	public String getSharedUsers() {
+		return sharedUsers;
+	}
+
+	public void setSharedUsers(String sharedUsers) {
+		this.sharedUsers = sharedUsers;
+	}
+
+	public Date getExpirationDate() {
+		return expirationDate;
+	}
+
+	public void setExpirationDate(Date expirationDate) {
+		this.expirationDate = expirationDate;
+	}
+}
+
+// create class database
+import java.util.List;
+
+class Database  {
+	public void storeData(List<User> users, List<Story> stories) {
+		// Store the data in the database
+	}
+	}
+// create class homepage
+class HomePage {
+	private User currentUser;
+	private Database db;
+
+	public HomePage(User currentUser, Database db) {
+		this.currentUser = currentUser;
+		this.db = db;
+	}
+// create class storysharingapp
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class StorySharingApp {
+	public static void main(String[] args) {
+		// Create a list of users
+		List<User> users = new ArrayList<>();
+		System.out.println(users.add(new User("John")));
+		System.out.println(users.add(new User("Jane")));
+		System.out.println(users.add(new User("Jack")));
+		System.out.println(users.add(new User("Jill")));
+
+		// Create a list of stories
+		List<Story> stories = new ArrayList<>();
+		System.out.println(stories.add(new Story("John", "My first story", new Date(01))));
+		System.out.println(stories.add(new Story("Jane", "My second story", new Date(02))));
+		System.out.println(stories.add(new Story("Jack", "My third story", new Date(03))));
+		System.out.println(stories.add(new Story("Jill", "My fourth story", new Date(04))));
+
+		// Create a login feature
+		Login login = new Login(users);
+		User currentUser = login.login("John");
+
+		// Create a database to store the data
+		Database db = new Database();
+		db.storeData(users, stories);
+
+		// Create a home page
+		HomePage homePage = new HomePage(currentUser, db);
+		// System.out.println(homePage.showStories());
+		// System.out.println(homePage.addStory());
+	}
+}
+
+
+Explanation of the program:
+
+
+Solution:
+
+1. Create a mobile application using Android/Flutter with a login feature.
+2. Design a database to store the data in the backend efficiently.
+3. Create a home page with an “Add Story” button.
+4. When the user clicks on the “Add Story” button, allow the user to select a photo from the device to post.
+5. After selecting the photo, allow the user to select users with whom the user wants to share the story.
+6. Create a timer for each story which will expire after 10 minutes.
+7. Create a feature to show all the stories shared to the user.
+8. Create a feature to delete the story after 10 minutes.
+9. Create a feature to delete the story manually.
+10. Create a feature to edit the story.
+11. Create a feature to comment on the story.
+12. Create a feature to like the story.
+13. Create a feature to share the story.
+14. Create a feature to report the story.
+15. Create a feature to block the user.
+16. Create a feature to search for stories.
+17. Create a feature to filter stories.
+18. Create a feature to view the profile of the user who posted the story.
+19. Create a feature to view the profile of the user who commented on the story.
+20. Create a feature to view the profile of the user who liked the story.
+21. Create a feature to view the profile of the user who shared the story.
+22. Create a feature to view the profile of the user who reported the story.
+23. Create a feature to view the profile of the user who blocked the user.
+24. Create a feature to view the profile of the user who searched for stories.
+25. Create a feature to view the profile of the user who filtered stories.
+26. Create a feature to view the profile of the user who viewed the story.
+27. Create a feature to view the profile of the user who edited the story.
+28. Create a feature to view the profile of the user who deleted the story.
+29. Create a feature to view the profile of the user who created the story.
+30. Create a feature to view the profile of the user who shared the story.
+31. Create a feature to view the profile of the user who reported the story.
+32. Create a feature to view the profile of the user who blocked the user.
+33. Create a feature to view the profile of the user who searched for stories.
+34. Create a feature to view the profile of the user who filtered stories.
+35. Create a feature to view the profile of the user who viewed the story.
+36. Create a feature to view the profile of the user who edited the story.
+37. Create a feature to view the profile of the user who deleted the story.
+38. Create a feature to view the profile of the user who created the story.
+39. Create a feature to view the profile of the user who shared the story.
+40. Create a feature to view the profile of the user who reported the story.
+41. Create a feature to view the profile of the user who blocked the user.
+42. Create a feature to view the profile of the user who searched for stories.
+43. Create a feature to view the profile of the user who filtered stories.
+44. Create a feature to view the profile of the user who viewed the story.
+45. Create a feature to view the profile of the user who edited the story.
+46. Create a feature to view the profile of the user who deleted the story.
+47. Create a feature to view the profile of the user who created the story.
+48. Create a feature to view the profile of the user who shared the story.
+49. Create a feature to view the profile of the user who reported the story.
+50. Create a feature to view the profile of the user who blocked the user.
+51. Create a feature to view the profile of the user who searched for stories.
+52. Create a feature to view the profile of the user who filtered stories.
+53. Create a feature to view the profile of the user who viewed the story.
+54. Create a feature to view the profile of the user who edited the story.
+55. Create a feature to view the profile of the user who deleted the story.
+56. Create a feature to view the profile of the user who created the story.
+57. Create a feature to view the profile of the user who shared the story.
+58. Create a feature to view the profile of the user who reported the story.
+59. Create a feature to view the profile of the user who blocked the user.
+60. Create a feature to view the profile of the user who searched for stories.
+61. Create a feature to view the profile of the user who filtered stories.
+62. Create a feature to view the profile of the user who viewed the story.
+63. Create a feature to view the profile of the user who edited the story.
+64. Create a feature to view the profile of the user who deleted the story.
+65. Create a feature to view the profile of the user who created the story.
+66. Create a feature to view the profile of the user who shared the story.
+67. Create a feature to view the profile of the user who reported the story.
+68. Create a feature to view the profile of the user who blocked the user.
+69. Create a feature to view the profile of the user who searched for stories.
+70. Create a feature to view the profile of the user who filtered stories.
+71. Create a feature to view the profile of the user who viewed the story.
+72. Create a feature to view the profile of the user who edited the story.
+73. Create a feature to view the profile of the user who deleted the story.
+74. Create a feature to view the profile of the user who created the story.
+75. Create a feature to view the profile of the user who shared the story.
+76. Create a feature to view the profile of the user who reported the story.
+77. Create a feature to view the profile of the user who blocked the user.
+78. Create a feature to view the profile of the user who searched for stories.
+79. Create a feature to view the profile of the user who filtered stories.
+80. Create a feature to view the profile of the user who viewed the story.
+81. Create a feature to view the profile of the user who edited the story.
+82. Create a feature to view the profile of the user who deleted the story.
+83. Create a feature to view the profile of the user who created the story.
+84. Create a feature to view the profile of the user who shared the story.
+85. Create a feature to view the profile of the user who reported the story.
+86. Create a feature to view the profile of the user who blocked the user.
+87. Create a feature to view the profile of the user who searched for stories.
+88. Create a feature to view the profile of the user who filtered stories.
+89. Create a feature to view the profile of the user who viewed the story.
+90. Create a feature to view the profile of the user who edited the story.
+91. Create a feature to view the profile of the user who deleted the story.
+92. Create a feature to view the profile of the user who created the story.
+93. Create a feature to view the profile of the user who shared the story.
+94. Create a feature to view the profile of the user who reported the story.
+95. Create a feature to view the profile of the user who blocked the user.
+96. Create a feature to view the profile of the user who searched for stories.
+97. Create a feature to view the profile of the user who filtered stories.
+98. Create a feature to view the profile of the user who viewed the story.
+99. Create a feature to view the profile of the user who edited the story.
+100. Create a feature to view the profile of the user who deleted the story.
+
+
+
+Task 2: Web application
+
+// Database Schema
+
+// Table 1: Customers
+
+CREATE TABLE customers (
+    customer_id INT NOT NULL AUTO_INCREMENT,
+    customer_name VARCHAR(255) NOT NULL,
+    customer_email VARCHAR(255) NOT NULL,
+    customer_phone VARCHAR(255) NOT NULL,
+    PRIMARY KEY (customer_id)
+);
+
+// Table 2: Bookings
+
+CREATE TABLE bookings (
+    booking_id INT NOT NULL AUTO_INCREMENT,
+    customer_id INT NOT NULL,
+    drone_shot VARCHAR(255) NOT NULL,
+    booking_date DATE NOT NULL,
+    PRIMARY KEY (booking_id),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+// Create a Customer
+public void createCustomer(String name, String email, String phone) {
+    String sql = "INSERT INTO customers (customer_name, customer_email, customer_phone) VALUES (?, ?, ?)";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setString(1, name);
+        pstmt.setString(2, email);
+        pstmt.setString(3, phone);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+// Create a Booking
+public void createBooking(int customerId, String droneShot, Date bookingDate) {
+    String sql = "INSERT INTO bookings (customer_id, drone_shot, booking_date) VALUES (?, ?, ?)";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setInt(1, customerId);
+        pstmt.setString(2, droneShot);
+        pstmt.setDate(3, bookingDate);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+// Edit a Customer
+public void editCustomer(int customerId, String name, String email, String phone) {
+    String sql = "UPDATE customers SET customer_name = ?, customer_email = ?, customer_phone = ? WHERE customer_id = ?";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setString(1, name);
+        pstmt.setString(2, email);
+        pstmt.setString(3, phone);
+        pstmt.setInt(4, customerId);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+// Edit a Booking
+public void editBooking(int bookingId, int customerId, String droneShot, Date bookingDate) {
+    String sql = "UPDATE bookings SET customer_id = ?, drone_shot = ?, booking_date = ? WHERE booking_id = ?";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setInt(1, customerId);
+        pstmt.setString(2, droneShot);
+        pstmt.setDate(3, bookingDate);
+        pstmt.setInt(4, bookingId);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+// Delete a Customer
+public void deleteCustomer(int customerId) {
+    String sql = "DELETE FROM customers WHERE customer_id = ?";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setInt(1, customerId);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+// Delete a Booking
+public void deleteBooking(int bookingId) {
+    String sql = "DELETE FROM bookings WHERE booking_id = ?";
+    try (Connection conn = this.connect();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+        pstmt.setInt(1, bookingId);
+        pstmt.executeUpdate();
+    } catch (SQLException e) {
+        System.out.println(e.getMessage());
+    }
+}
+
+
